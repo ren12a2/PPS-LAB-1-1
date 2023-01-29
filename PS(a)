@@ -1,0 +1,28 @@
+#include <stdio.h>
+void main()
+{
+    float a,b;
+    char c='c';
+    printf("Enter two numbers\n\n\n");
+    scanf("%f %f", &a, &b);
+
+    printf("Addition : %f\n", (a+b));
+    printf("subtraction : %f\n", (a-b));
+    printf("multiplication : %f\n",(a*b));
+    printf("division : %f\n\n\n", (a/b));
+    
+    printf("True 1 \nFalse 0\n\n\n");
+    printf("\nFirst number is greater %d",(a>b));
+    printf("\nSecond number is greater %d",(a<b));
+    printf("\nBoth numbers are identical %d",(a==b));
+
+    printf("\nBoth numbers are single digit numbers",((a<10)&&(b<10)));
+    printf("\nOne of the numbers is a single digit number",((a<10)||(b<10)));
+    printf("\nOne number is NOT a single digit number",!((a>10)||(b>10)));
+    
+    printf("\nEnter a bitwise number value");
+    scanf("\n\n%c", &c);
+    printf("\nShift the value of first number by 1 to the left");
+    printf("%c",(c<<1));
+    return 0;
+}
