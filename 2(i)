@@ -1,0 +1,15 @@
+//Calculate 1+x+x^(2)+x^(3)+...+x^(n)
+#include <stdio.h>
+#include <math.h>
+int main() {
+float sum=0,x,y,n;
+int i;
+printf("Enter x and n\n");
+scanf("%f %f", &x, &n);
+for(i=0;i<=3;i++){
+    y=pow*(x,i);
+    sum=sum+y;
+}
+ printf("Sum is %f\n", sum);
+return 0;
+}
