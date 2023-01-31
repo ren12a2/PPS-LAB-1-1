@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    float a,b,c;
+    int choice,m;
+    printf("Enter two numbers\n");
+    scanf("%f %f", &a, &b);
+    printf( "Enter choice 1 2 3 4 5 \n");
+    scanf(" %d ", &choice);
+    switch(choice)
+    { case 1:printf("Addition is %f", c=a+b);
+    break;
+    case 2:printf("Subtaction is %f", c=a-b);
+    break ;
+    case 3:printf("Multiplication is %f", c=a*b);
+    break ;
+    case 4:printf("Division is %f", c=a/b);
+    break;
+    case 5: m=(int)a%(int)b;
+    printf("Modulus is %d", m);
+    break;
+    default:printf("\nstop");
+    }
+    
+    return 0;
+}
